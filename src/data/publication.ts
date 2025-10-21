@@ -4,6 +4,7 @@ export interface Publication {
   title: string;
   authors: string;
   paperUrl?: string;
+  HfUrl?: string;
   codeUrl?: string;
   bibtex?: string;
   tldr?: string;
