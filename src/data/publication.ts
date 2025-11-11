@@ -19,7 +19,7 @@ export const publicationData: Publication[] = [
     conference: "EMNLP Mains",
     title: "Investigating Pedagogical Teacher and Student LLM Agents: Genetic Adaptation Meets Retrieval Augmented Generation Across Learning Style",
     authors: "Debdeep Sanyal, Agniva Maiti, Umakanta Maharana, Dhruv Kumar, Ankur Mali, C. Lee Giles, Murari Mandal",
-    paperUrl: "https://arxiv.org/abs/2505.19173",
+    paperUrl: "https://aclanthology.org/2025.emnlp-main.675.pdf",
     // codeUrl: "https://github.com/jsmith/scalable-causal-discovery",
     //bibtex: "https://arxiv.org/abs/2409.15476.bib",
     tldr: "We created a digital sandbox for an AI to practice teaching and discover what truly works for different students.",
@@ -28,6 +28,16 @@ export const publicationData: Publication[] = [
     // award: "🏆 Best Paper Award",
     // if you have an image in public/images, you can use it like this:
     // imageUrl: "/images/publication-image.jpg"
+  },
+  {
+    year: "2025",
+    conference: "AAAI",
+    title: "AntiDote: Bi-level Adversarial Training for Tamper-Resistant LLMs",
+    authors: "Debdeep Sanyal, Manodeep Ray, Murari Mandal",
+    paperUrl: "https://arxiv.org/abs/2509.08000",
+    // HFUrl: "https://huggingface.co/datasets/respai-lab/orgaccess",
+    imageUrl: "/antidote.png",
+    tldr: "We make an LLM robust against malicious fine-tuning by co-evolving it in a game against an adversary model.",
   },
   {
     year: "2025",
@@ -44,7 +54,7 @@ export const publicationData: Publication[] = [
     conference: "EMNLP Findings, EMNLP NLLP Workshop Oral",
     title: "Nine Ways to Break Copyright Law and Why Our LLM Won't: A Fair Use Aligned Generation Framework",
     authors: "Aakash Sen Sharma, Debdeep Sanyal, Priyansh Srivastava, Sundar Atreya H., Shirish Karande, Mohan Kankanhalli, Murari Mandal",
-    paperUrl: "https://arxiv.org/abs/2505.23788",
+    paperUrl: "https://aclanthology.org/2025.findings-emnlp.423.pdf",
     HFUrl: "https://huggingface.co/collections/respai-lab/law-lm-68c8a8577d4233e576162c4e",
     imageUrl: "/lawlm.png",
     tldr: "LAW-LM empowers LLMs to generate maximally helpful content while thoughtfully adhering to complex copyright laws.",
@@ -68,15 +78,5 @@ export const publicationData: Publication[] = [
     HFUrl: "https://huggingface.co/datasets/respai-lab/orgaccess",
     imageUrl: "/orgaccess.png",
     tldr: "We introduce a novel, expert-crafted benchmark to test if LLMs can truly understand and respect complex organizational roles and permissions for enterprise use.",
-  },
-  {
-    year: "2025",
-    conference: "arXiv",
-    title: "AntiDote: Bi-level Adversarial Training for Tamper-Resistant LLMs",
-    authors: "Debdeep Sanyal, Manodeep Ray, Murari Mandal",
-    paperUrl: "https://arxiv.org/abs/2509.08000",
-    // HFUrl: "https://huggingface.co/datasets/respai-lab/orgaccess",
-    imageUrl: "/antidote.png",
-    tldr: "We make an LLM robust against malicious fine-tuning by co-evolving it in a game against an adversary model.",
   },
 ];
