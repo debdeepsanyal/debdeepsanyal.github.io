@@ -19,12 +19,12 @@ export interface AboutMe {
 
 export const aboutMe: AboutMe = {
   name: "Debdeep Sanyal",
-  title: "Undergraduate Student",
-  institution: "KIIT University",
+  title: "Research Engineer",
+  institution: "Birla AI Labs",
   // Note that links work in the description
   description:
     "<p class='mb-4'>I'm a final year undergrad student working with and learning more about Large Language Models. I'm still exploring the vast array of topics, and I try to get my hands dirty with whatever I find interesting (hence my research profile consists of papers that span through quite a few topics.)</p><p class='mb-4'>I like reasoning, but not the kind that aims at making LLMs score slightly higher on a benchmark; a more general kind, a system that can be used by my mother with the same ease as I do. I am very drawn towards mechanistic interpretability, I like asking <em>why</em> and <em>how</em> when I land on some result or finding which I wasn't expecting, and I love reading about how people look up such answers. I have also been studying reinforcement learning in fair depth recently.</p><p>I am currently a research associate intern at the Birla AI Labs, where we are building India's first Time Series Foundation Model, and I contribute to the novelties of the model and the training pipeline. I work with the <a href='https://respailab.github.io/' target='_blank' rel='noopener noreferrer'>RespAI Lab</a> where I get to collaborate with some amazing people on my research.</p><p>Always looking for more!</p>",
-  email: "debdeep.sanyal2003@gmail.com",
+  email: "research@debdeepsanyal.com",
   imageUrl:
     "/website_space.jpg",
   googleScholarUrl: "https://scholar.google.com/citations?user=KfH9xM8AAAAJ&hl=en",
