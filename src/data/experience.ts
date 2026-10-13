@@ -11,7 +11,7 @@ export interface Experience {
 export const experienceData: Experience[] = [
   {
     date: "April 2026–Present",
-    title: "Founding research engineer",
+    title: "Research Engineer — Founding Team",
     company: "Birla AI Labs",
     description:
       "I build time-series foundation models, owning the training pipeline, experimentation, evaluation, and inference. I currently lead pretraining and architecture experimentation for Bharat-TSFM under the IndiaAI initiative.",
