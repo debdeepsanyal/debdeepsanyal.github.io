@@ -33,7 +33,6 @@ export const aboutMe: AboutMe = {
   twitterUsername: "debdeeplikesai",
   // blogUrl: "https://",
   cvUrl: "/resume.pdf",
-  institutionUrl: "https://kiit.ac.in/",
   // altName: "",
   // secretDescription: "I like dogs.",
 };
