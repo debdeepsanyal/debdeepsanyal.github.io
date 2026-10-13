@@ -19,14 +19,14 @@ export interface AboutMe {
 
 export const aboutMe: AboutMe = {
   name: "Debdeep Sanyal",
-  title: "Research Engineer",
+  title: "Founding research engineer",
   institution: "Birla AI Labs",
   // Note that links work in the description
   description:
-    "<p class='mb-4'>I'm a final year undergrad student working with and learning more about Large Language Models. I'm still exploring the vast array of topics, and I try to get my hands dirty with whatever I find interesting (hence my research profile consists of papers that span through quite a few topics.)</p><p class='mb-4'>I like reasoning, but not the kind that aims at making LLMs score slightly higher on a benchmark; a more general kind, a system that can be used by my mother with the same ease as I do. I am very drawn towards mechanistic interpretability, I like asking <em>why</em> and <em>how</em> when I land on some result or finding which I wasn't expecting, and I love reading about how people look up such answers. I have also been studying reinforcement learning in fair depth recently.</p><p>I am currently a research associate intern at the Birla AI Labs, where we are building India's first Time Series Foundation Model, and I contribute to the novelties of the model and the training pipeline. I work with the <a href='https://respailab.github.io/' target='_blank' rel='noopener noreferrer'>RespAI Lab</a> where I get to collaborate with some amazing people on my research.</p><p>Always looking for more!</p>",
+    "<p class='mb-4'>Hello. I like computers (adult fascination, really) and I also happen to have studied computer science for my bachelors, which is great. I'm still figuring out my interest niche, but I have noticed that I'm always a bit more inclined towards the fundamentals of things, be it computer systems or neural networks. </p><p class='mb-4'> My research spectrum has been broad and not in a bragging way. When I had started out, I had no reading taste and just read about anything which came up. If something seemed pretty off about some work, I tried fixing it. That's really how I got my initial papers (this story probably sounds silly and maybe I could put something more motivational, but it reads human. And true.) I like reading, and lately working, on works which questions core concepts, breaks assumption walls, and tries to approach things from first principles. </p><p class='mb-4'> I enjoy building foundation models at my work, working with large systems enthuse me. I've also learnt that training models is more of an intuition and observation art which I thoroughly enjoy. I am looking for a PhD, among all the recent speculations of the worth of doing a PhD. I'd still do it for the fun of it actually. </p><p class='mb-4'> This entire text is composed of human generated tokens and the stochasticity is intentional, for beyond computers and maths, I am a whole human.</p>",
   email: "research@debdeepsanyal.com",
   imageUrl:
-    "/website_space.jpg",
+    "/icml_dp.jpeg",
   googleScholarUrl: "https://scholar.google.com/citations?user=KfH9xM8AAAAJ&hl=en",
   githubUsername: "debdeepsanyal",
   linkedinUsername: "debdeep-sanyal-18264a211",

@@ -22,7 +22,7 @@ export function PublicationEntry({
       )}
       <div className="flex flex-col flex-1">
         <div className="flex flex-row gap-4 items-center mb-2">
-          <p className="text-xs text-zinc-500">
+          <p className="text-xs text-muted">
             {publication.conference} {publication.year}
           </p>
           {publication.award && (
@@ -35,12 +35,12 @@ export function PublicationEntry({
           )}
         </div>
         <h3 className="font-serif text-md mb-3">{publication.title}</h3>
-        <p className="text-sm text-zinc-600 mb-4">{publication.authors}</p>
+        <p className="text-sm text-secondary mb-4">{publication.authors}</p>
         <div className="flex flex-row gap-6">
           {publication.paperUrl && (
             <a
               href={publication.paperUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-muted hover:text-foreground transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}
@@ -52,7 +52,7 @@ export function PublicationEntry({
           {publication.codeUrl && (
             <a
               href={publication.codeUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-muted hover:text-foreground transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}
@@ -64,7 +64,7 @@ export function PublicationEntry({
           {publication.HFUrl && (
             <a
               href={publication.HFUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-muted hover:text-foreground transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}
@@ -76,7 +76,7 @@ export function PublicationEntry({
           {publication.bibtex && (
             <a
               href={publication.bibtex}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-muted hover:text-foreground transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}
@@ -87,7 +87,7 @@ export function PublicationEntry({
           )}
         </div>
         {publication.tldr && (
-          <p className="text-sm italic text-zinc-600 mt-4">
+          <p className="text-sm italic text-secondary mt-4">
             {publication.tldr}
           </p>
         )}

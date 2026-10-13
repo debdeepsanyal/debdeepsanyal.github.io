@@ -10,12 +10,11 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    date: "Summer 2025",
-    title: "Research Associate Intern",
+    date: "April 2026–Present",
+    title: "Founding research engineer",
     company: "Birla AI Labs",
     description:
-      "Developing India's first Time Series Foundation Model. I take care of the novelties to be incorporated in the model and the training pipeline.",
-    advisor: "Saurabh Deshpande",
+      "I build time-series foundation models, owning the training pipeline, experimentation, evaluation, and inference. I currently lead pretraining and architecture experimentation for Bharat-TSFM under the IndiaAI initiative.",
     // companyUrl: "https://deepmind.com",
   },
   // {

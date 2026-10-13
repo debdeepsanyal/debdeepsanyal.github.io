@@ -13,10 +13,34 @@ export interface Publication {
 }
 
 export const publicationData: Publication[] = [
+  {
+    year: "2026",
+    conference: "EMNLP Main",
+    title: "Policy Optimization Prefers The Path of Least Resistance",
+    authors: "Debdeep Sanyal, Aakash Sen Sharma, Dhruv Kumar, Saurabh Deshpande, Murari Mandal",
+    paperUrl: "https://arxiv.org/abs/2510.21853",
+    imageUrl: "/policy_opt.png",
+  },
+  {
+    year: "2026",
+    conference: "ICML",
+    title: "The Realignment Problem: When Right becomes Wrong in LLMs",
+    authors: "Aakash Sen Sharma, Debdeep Sanyal, Manodeep Ray, Vivek Srivastava, Shirish Karande, Murari Mandal",
+    paperUrl: "https://arxiv.org/abs/2511.02623",
+    imageUrl: "/realignment_problem.png",
+  },
+  {
+    year: "2026",
+    conference: "ICML Workshop on Foundation Models for Structured Data (FMSD)",
+    title: "Mix, Don't Pick: Why Synthetic Corpus Composition Matters for Time Series Foundation Model Pretraining",
+    authors: "Aaryan Nagpal, Debdeep Sanyal, Murari Mandal, Dhruv Kumar, Saurabh Deshpande",
+    paperUrl: "https://arxiv.org/abs/2606.09912",
+    imageUrl: "/mix_dont_pick.png",
+  },
   // If you don't want to show publications, just make the array empty.
   {
     year: "2025",
-    conference: "EMNLP Mains",
+    conference: "EMNLP Main",
     title: "Investigating Pedagogical Teacher and Student LLM Agents: Genetic Adaptation Meets Retrieval Augmented Generation Across Learning Style",
     authors: "Debdeep Sanyal, Agniva Maiti, Umakanta Maharana, Dhruv Kumar, Ankur Mali, C. Lee Giles, Murari Mandal",
     paperUrl: "https://aclanthology.org/2025.emnlp-main.675.pdf",
@@ -30,7 +54,7 @@ export const publicationData: Publication[] = [
     // imageUrl: "/images/publication-image.jpg"
   },
   {
-    year: "2025",
+    year: "2026",
     conference: "AAAI",
     title: "AntiDote: Bi-level Adversarial Training for Tamper-Resistant LLMs",
     authors: "Debdeep Sanyal, Manodeep Ray, Murari Mandal",
@@ -70,13 +94,13 @@ export const publicationData: Publication[] = [
     tldr: "We show how to take the essence of a past event, like a market crash, and directly implant it into a TSFM to change how it models the future.",
   },
   {
-    year: "2025",
-    conference: "arXiv",
+    year: "2026",
+    conference: "EMNLP Main",
     title: "OrgAccess: A Benchmark for Role Based Access Control in Organization Scale LLMs",
-    authors: "Debdeep Sanyal, Umakanta Maharana, Yash Sinha, Hong Ming Tan, Shirish Karande, Mohan Kankanhalli, Murari Mandal",
+    authors: "Debdeep Sanyal, Umakanta Maharana, Yash Sinha, Hong Ming Tan, Mohan Kankanhalli, Murari Mandal",
     paperUrl: "https://arxiv.org/abs/2505.19165",
     HFUrl: "https://huggingface.co/datasets/respai-lab/orgaccess",
     imageUrl: "/orgaccess.png",
     tldr: "We introduce a novel, expert-crafted benchmark to test if LLMs can truly understand and respect complex organizational roles and permissions for enterprise use.",
   },
-];
+].sort((a, b) => Number(b.year) - Number(a.year));

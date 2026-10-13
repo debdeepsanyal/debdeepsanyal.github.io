@@ -39,29 +39,40 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function () {
+            var theme;
+            try { theme = localStorage.getItem('theme'); } catch (_) {}
+            var dark = theme === 'dark' ||
+              (theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            document.documentElement.classList.toggle('dark', dark);
+          })();
+        ` }} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} ${ptSerif.variable} antialiased`}
       >
         <main className="">{children}</main>
-        <footer className="border-t border-neutral-200 dark:border-neutral-800 bg-[#FFFCF8]">
+        <footer className="border-t border-line bg-background">
           <div className="flex flex-row mx-auto max-w-7xl px-6 py-12 md:flex md:items-start md:justify-between ">
-            <div className="mb-4 text-sm text-neutral-600 dark:text-neutral-400">
+            <div className="mb-4 text-sm text-secondary">
               <p>
                 © {new Date().getFullYear()} {aboutMe.name}.
               </p>
               {aboutMe.secretDescription && (
-                <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-4">
+                <p className="text-xs text-secondary mt-4">
                   {aboutMe.secretDescription}
                 </p>
               )}
             </div>
             <div className="mb-4">
-              <p className="text-sm text-neutral-500 dark:text-neutral-500 justify">
+              <p className="text-sm text-muted justify">
                 Built with{" "}
                 <a
                   href="https://github.com/tovacinni/research-website-template"
-                  className="underline hover:text-neutral-800 dark:hover:text-neutral-300 transition-colors"
+                  className="underline hover:text-foreground transition-colors"
                 >
                   research-website-template
                 </a>

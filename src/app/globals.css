@@ -3,8 +3,38 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  color-scheme: light;
+  --background: #fffcf8;
   --foreground: #171717;
+  --secondary: #52525b;
+  --muted: #686872;
+  --line: #e4e4e7;
+  --surface: #f1efec;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --background: #252c35;
+  --foreground: #f1eee8;
+  --secondary: #d0d3d8;
+  --muted: #b0b8c3;
+  --line: #454e5b;
+  --surface: #333c48;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 4px;
+}
+
+.theme-icon-light,
+.dark .theme-icon-dark {
+  display: none;
+}
+
+.dark .theme-icon-light {
+  display: block;
 }
 
 body {
