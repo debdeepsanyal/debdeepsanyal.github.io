@@ -32,7 +32,7 @@ export const aboutMe: AboutMe = {
   linkedinUsername: "debdeep-sanyal-18264a211",
   twitterUsername: "debdeeplikesai",
   // blogUrl: "https://",
-  cvUrl: "/resume.pdf",
+  cvUrl: "/my_resume.pdf",
   // altName: "",
   // secretDescription: "I like dogs.",
 };
